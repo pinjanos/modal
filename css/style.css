@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+.popUpModal {
+    text-align: center;    
+}
+
+.Modal-openBtn {
+    cursor: pointer;
+    text-align: center;
+    height: 50px;
+    width: 240px;
+}
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.modal-content {
+    display: inline-block;
+    text-align: left;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.modal-close {
+    display: flex;
+    color: rgb(175, 175, 175);
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.modal-close:hover, .close:focus {
+    color: rgb(0, 0, 0.4);
+    text-decoration: none;
+    padding: 0;
+}
+
+.modal-btn {
+    display: inline-flex;
+    border-radius: 5px 5px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.button__green {
+    background-color: green;
+}
+
+.button__red {
+    background-color: red;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
