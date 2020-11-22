@@ -4,7 +4,7 @@ let modal = document.querySelector('.modal');
 
 let content = document.querySelector('.modal-close');
 
-let btn = document.querySelector('.Modal-openBtn')
+let btn = document.querySelector('.Modal-openBtn');
 
 let redBtn = document.querySelector('.button__red');
 
