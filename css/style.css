@@ -4,13 +4,15 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-
 .popUpModal {
-    text-align: center;    
+    text-align: center;
+    line-height: 45rem;    
 }
 
 .Modal-openBtn {
     cursor: pointer;
+    border-radius: 5px 5px;
+    box-shadow: 0 4px 8px 0 rgb(114, 114, 114);
     text-align: center;
     height: 50px;
     width: 240px;
@@ -31,6 +33,10 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+h3 {
+    color: dimgrey;
+}
+
 .modal-header {
     display: flex;
     justify-content: space-between;
@@ -41,8 +47,28 @@
 .modal-content {
     display: inline-block;
     text-align: left;
+    border-radius: 7px 7px;
+    background-color: rgb(245, 245, 245);
+    padding: 0.5rem;
+    border: 1px solid rgb(114, 114, 114);
     max-height: 100%;
     max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(0,0,0,0.5);
+    animation: open 1s;
+}
+@media only screen and (min-width: 560px) {
+    .modal-content {
+        width: 50%;
+    }
+}
+
+@keyframes open {
+    0% {opacity:0;} 
+    100% {opacity:1;}
+}
+
+.popUp {
+    display: flex;
 }
 
 .modal-close {
@@ -50,12 +76,26 @@
     color: rgb(175, 175, 175);
     background-color: transparent;
     font-size: 1.5rem;
+    border-radius: 5px 5px;
+    box-shadow: 0 4px 8px 0 rgb(114, 114, 114);
+    padding: 0;
 }
 
 .modal-close:hover, .close:focus {
     color: rgb(0, 0, 0.4);
     text-decoration: none;
+    cursor: pointer; 
     padding: 0;
+}
+
+.disappearance {
+    display: none;
+    transition: .3s;
+  }
+  
+@keyframes close {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 .modal-btn {
@@ -67,14 +107,19 @@
     padding-right: 1rem;
     margin-top: 1rem;
     margin-left: .5rem;
+    border: 1px;
+    color: rgb(250, 250, 250);
+    box-shadow: 0 4px 8px 0 rgb(114, 114, 114);
 }
 
 .button__green {
     background-color: green;
+    cursor: pointer;
 }
 
 .button__red {
     background-color: red;
+    cursor: pointer;
 }
 
 .modal-footer {
