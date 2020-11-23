@@ -6,7 +6,9 @@
 
 .popUpModal {
     text-align: center;
-    line-height: 45rem;    
+    line-height: 45rem;
+    /* display: flex;
+    align-items: center;       */
 }
 
 .Modal-openBtn {
@@ -120,6 +122,20 @@ h3 {
 .button__red {
     background-color: red;
     cursor: pointer;
+}
+
+.button__red:hover {
+    background-color: rgba(248, 70, 70, 0.733);
+    color: rgb(0, 0, 0.4);
+    text-decoration: none;
+    cursor: pointer; 
+    /* padding: 0; */
+}
+.button__red:focus {
+    color: rgb(216, 180, 180);
+    text-decoration: none;
+    cursor: pointer; 
+    /* padding: 0; */
 }
 
 .modal-footer {
