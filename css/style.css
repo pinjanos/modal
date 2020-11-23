@@ -4,6 +4,30 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+/* Amőba */
+
+section {
+    text-align: center;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+/* Modal */
+
 .popUpModal {
     text-align: center;
     line-height: 45rem;
@@ -72,7 +96,7 @@ h3 {
 }
 @media only screen and (min-width: 560px) {
     .modal-content {
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -149,6 +173,26 @@ h3 {
     cursor: pointer;
     box-shadow: 0 1px 2px 0 rgb(114, 114, 114);
     /* padding: 0; */
+}
+
+.game__restart {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.game__restart:hover {
+    background-color: rgb(175, 166, 166);
+    color: rgb(73, 73, 73);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.game__restart:focus {
+    background-color: rgb(175, 166, 166);
+    color: rgb(114, 112, 112);
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 1px 2px 0 rgb(114, 114, 114);
 }
 
 .modal-footer {
