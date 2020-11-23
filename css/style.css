@@ -20,6 +20,18 @@
     width: 240px;
 }
 
+.Modal-openBtn:hover {
+    box-shadow: 0 2px 4px 0 rgb(114, 114, 114);
+    background-color: rgb(175, 175, 175);
+    color: rgb(245, 245, 245);
+}
+
+.Modal-openBtn:focus {
+    box-shadow: 0 2px 4px 0 rgb(54, 54, 54);
+    background-color: rgb(214, 208, 208);
+    color: rgb(141, 133, 133);
+}
+
 .modal {
     display: none;
     align-items: center;
@@ -134,7 +146,8 @@ h3 {
 .button__red:focus {
     color: rgb(216, 180, 180);
     text-decoration: none;
-    cursor: pointer; 
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgb(114, 114, 114);
     /* padding: 0; */
 }
 
